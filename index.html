@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <h1>POKEDEX</h1>
+    <form onsubmit="recherchePokemon(event)">
+      <input
+        type="text"
+        name="pokemon"
+        autocomplete="off"
+        class="input-pokemon"
+        placeholder="Recherchez votre Pokemon"
+      />
+      <p class="errorElement"></p>
+    </form>
+    <div class="card-pokemon">
+      <h2 class="pokemon-nom"></h2>
+      <div class="card-image-container">
+        <img src="./img/pokedex.png" alt="pokeball" class="card-image" />
+      </div>
+      <p class="pokemon-id"></p>
+      <div class="pokemon-type"></div>
+      <div class="pokemon-stats"></div>
+    </div>
+
+    <footer>
+      ©2024 Pokémon. ©1995-2024 Nintendo/Creatures Inc./GAME FREAK inc. Pokémon
+      et Pokémon character names sont des marques de Nintendo.
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
